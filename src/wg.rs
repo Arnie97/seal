@@ -164,7 +164,7 @@ impl UAPIClient {
         buff.push('\n');
         let mut data = buff.as_bytes();
 
-        println!("send config to uapi");
+        println!("send config to uapi:\n{}", String::from_utf8_lossy(data));
         while !data.is_empty() {
             match conn.write(data).await {
                 Ok(n) if n > 0 => {
