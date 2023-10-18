@@ -123,7 +123,7 @@ pub struct WgConf {
     pub peer_key: String,
     pub route: Vec<String>,
 
-    // extent confs
+    // extended conf
     pub dns: String,
 
     // corplink confs
